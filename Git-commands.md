@@ -1,41 +1,42 @@
 
 
 ## Setup git account in cmd
+```
+    git config user.email @email.com
 
->git config user.email **@email.com**
->
->git config user.name **username**
->
->git config user.password **password**
+    git config user.name username
 
+    git config user.password password
+```
 ## To view global Git config
 ```
     git config --global --list / git config --list
 ```
 ## Change config globally user.name user.email
+```java
+// <!-- If you want to replace the wrong ones with the proper one: -->
 
+    git config --global --replace-all user.name newUsername
 
-If you want to replace the wrong ones with the proper one:
+// <!-- same applies for user mail: -->
 
->git config --global --replace-all user.name **newUsername**
+    git config --global --replace-all user.mail newEmail.com
 
-same applies for user mail:
->git config --global --replace-all user.mail **new@email.com**
+// <!-- Cloning a git repository -->
 
-Cloning a git repository
->git clone https://github.com/user/git-repo.git
-
+    git clone https://github.com/user/git-repo.git
+```
 ## Branches
 ```java
-//To create a branch
+// <!-- To create a branch -->
     
     git checkout -b new-branch
 
-//To list total branches
+// <!-- To list total branches -->
     
     git branch 
 
-//To checkout a branch
+// <!-- To checkout a branch -->
 
     git checkout branch_name
 
@@ -43,11 +44,11 @@ Cloning a git repository
 
     git pull origin   
 
-//How to delete a branch
+// <!-- How to delete a branch -->
 
     git branch -d branch-name
 
-//How to add & commit & push
+// <!-- How to add & commit & push -->
 
     git add .
     git commit -m"commit message"
@@ -60,7 +61,7 @@ Cloning a git repository
 
 
 ```java
-// after commiting changes to local
+// <!-- after commiting changes to local -->
 
     git tag -a v1.0 -m"latest verion"
     git push origin v1.0 / git push origin v1.0 develop
