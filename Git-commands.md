@@ -57,9 +57,7 @@
 ```
 
 
-# How to give a Tage
-
-
+## How to give a Tage
 ```java
 // <!-- after commiting changes to local -->
 
@@ -79,14 +77,14 @@
     git diff develop main
 ```
 
-## Undoing added changes
+# Undoing added changes
 ```java
     git add .
 
     git stash
 ```
 
-## Undoing last commit (that has not been pushed)
+# Undoing last commit (that has not been pushed)
 
 ```java
     git add .
@@ -98,7 +96,7 @@
     git reset --soft HEAD~3		//Reverts all three commits
 ```
 
-## Undoing a Specific Commit (That Has Been Pushed)
+# Undoing a Specific Commit (That Has Been Pushed)
 ```java
     git log --oneline
 
@@ -115,7 +113,7 @@
     git push -f origin develop / git push -f origin branch
 ```
 
-## Reverting a merged commit which pushed to remote
+# Reverting a merged commit which pushed to remote
 
 ```java
     git reset --merge a9fdeb5 / git reset --merge HEAD~1    //HEAD~ is the latest commit
