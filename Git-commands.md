@@ -28,13 +28,39 @@
 ```
 ## Branches
 ```java
-// <!-- To create a branch -->
-    
-    git checkout -b new-branch
+
+                                        Create
 
 // <!-- To list total branches -->
     
     git branch 
+    
+// <!-- To create a branch -->
+    
+    git checkout -b new-branch
+
+// <!-- To push all your branches to the remote -->
+
+    git push --all -u
+
+// <!-- To push a new local branch to a remote Git repository -->
+
+    git push -u origin new-branch
+
+
+
+                                        Delete
+
+// <!-- How to delete a branch -->
+
+    git branch -d branch-name
+
+// <!-- To push a deleted branch in local to the remote -->
+
+    git push origin --delete branch-name
+    
+
+                                Checkout, commit & push
 
 // <!-- To checkout a branch -->
 
@@ -43,10 +69,6 @@
     git fetch
 
     git pull origin   
-
-// <!-- How to delete a branch -->
-
-    git branch -d branch-name
 
 // <!-- How to add & commit & push -->
 
@@ -77,7 +99,7 @@
     git diff develop main
 ```
 
-# Undoing added changes
+# Undoing added changes (not committed)
 ```java
     git add .
 
