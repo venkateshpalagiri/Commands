@@ -51,7 +51,7 @@
 
                                         Delete
 
-// <!-- How to delete a branch -->
+// <!-- To delete a branch -->
 
     git branch -d branch-name
 
@@ -70,7 +70,7 @@
 
     git pull origin   
 
-// <!-- How to add & commit & push -->
+// <!-- To add & commit & push -->
 
     git add .
     git commit -m"commit message"
@@ -79,7 +79,7 @@
 ```
 
 
-## How to give a Tage
+## To give a Tage
 ```java
 // <!-- after commiting changes to local -->
 
