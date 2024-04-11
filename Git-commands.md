@@ -104,6 +104,8 @@
     git add .
 
     git stash
+    
+    git stash clear
 ```
 
 # Undoing last commit (that has not been pushed)
