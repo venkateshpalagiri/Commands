@@ -105,7 +105,7 @@
 
     git stash
     
-    git stash clear
+    git stash clear //Clears the stashed files
 ```
 
 # Undoing last commit (that has not been pushed)
